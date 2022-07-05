@@ -1,0 +1,56 @@
+.contacts__title {
+    margin-bottom: 54px;
+}
+
+.contacts__item {
+    display: flex;
+
+    width: 350px;
+    margin-bottom: 11px;
+}
+
+.contacts__item:first-of-type {
+    margin-bottom: 38px;
+}
+
+.contacts__item:last-of-type {
+    margin-bottom: 39px;
+}
+
+.contacts__img {
+    margin-right: 31px;
+}
+
+.contacts__img:last-of-type {
+    margin-right: 26px;
+}
+
+.contacts__adresse {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.contacts__link:hover {
+    color: #CD06FF;
+}
+
+.contacts__link:active {
+    color: #440F51;
+}
+
+.contacts__link:focus {
+    background-color: #777477;
+}
+
+.contacts__link:visited {
+    color: #777477;
+}

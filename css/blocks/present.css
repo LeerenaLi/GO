@@ -1,0 +1,33 @@
+.present {
+    padding-top: 146px;  
+}
+
+.present__content {
+    min-height: 823px;
+    position: relative;
+}
+
+.present__title {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: -0.1em;
+    margin: 0;
+}
+
+.present__title::after {
+    content: "";
+    background: url("../../img/banner.png") no-repeat;
+    background-size: contain;
+    width: 675px;
+    height: 762px;
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+}
+
+.present__subtitle {
+    line-height: 50px;
+    padding-left: 100px;
+}
