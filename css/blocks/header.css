@@ -1,0 +1,30 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.header__wrapper {
+    min-height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+}
+
+.header__submit {
+    
+    padding: 12px 30px 13px 30px;
+    background-color: #1B1A1B;
+    border: 3px solid #CD06FF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__submit:hover {
+    border: 3px solid #fff;
+    background-color: #CD06FF;
+}

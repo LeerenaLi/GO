@@ -1,3 +1,5 @@
+@import "blocks/header.css";
+@import "blocks/navigation.css";
 @import "blocks/present.css";
 @import "blocks/halls.css";
 @import "blocks/reserve.css";

@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     position: relative;
+    scroll-behavior: smooth;  /* плавная прокрутка внутри документа по якорям */
 }
 
 * {
