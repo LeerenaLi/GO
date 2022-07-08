@@ -51,3 +51,26 @@
     box-shadow: 0 0 5px #fff;
     border-radius: 100%;
 }
+
+.form__btn {
+    position: absolute;
+    right: 100px;
+    width: 300px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+    outline: none;
+    border: none;
+}
+
+.form__btn:hover {
+    color: #fff;
+    background: #6C0287;
+    box-shadow: 0 0 10px #fff;
+    transition: 0.3s ease-in-out;
+}

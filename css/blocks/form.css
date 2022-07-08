@@ -1,19 +1,296 @@
 .form {
-    padding: 0 20px;
-    margin: 0 auto;
+    width: 1180px;
+    position: relative;
 }
 
 .form__fieldset {
-    padding: 20px;
+    border: none;
     font-size: 18px;
-    margin-bottom: 8px;
+    padding: 0;
+}
+
+.form__legend {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .form__label {
-    margin-right: 15px;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    position: relative;
 }
 
 .form__btn {
     padding: 5px;
+}
+
+.form__fieldset_halls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.form__label_halls {
+    position: relative;
+}
+
+.form__input_halls {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form__input_halls::after {
+    content: "";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 246px;
+    height: 51px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.form__input_halls-vibes::after {
+    content: "80's vibes";
+}
+
+.form__input_halls-wars::after {
+    content: "Star wars";
+}
+
+.form__input_halls-west::after {
+    content: "Wild west";
+}
+
+.form__input_halls-neon::after {
+    content: "Neon style";
+}
+
+.form__input_halls:hover:after {
+    box-shadow: 0 0 10px #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.form__input_halls::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 246px;
+    height: 51px;
+    background: #6C0287;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form__input_halls-vibes::before {
+    content: "80's vibes";
+}
+
+.form__input_halls-wars::before {
+    content: "Star wars";
+}
+
+.form__input_halls-west::before {
+    content: "Wild west";
+}
+
+.form__input_halls-neon::before {
+    content: "Neon style";
+}
+
+.form__input_halls:checked:before {
+    opacity: 1;
+}
+
+.form__label_radio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form__input_radio {
+    width: 27px;
+    height: 27px;
+}
+
+.form__fieldset_games {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 67px;
+    max-width: 980px;  
+}
+
+.form__fieldset_game {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+
+.form__legend_games {
+    margin-bottom: 23px;
+    text-align: left;
+}
+
+.form__label_game {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form__input_game {
+    width: 25px;
+    height: 25px;
+}
+
+.form__fieldset_information {
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.form__fieldset_date {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    padding-top: 23px;
+    justify-content: space-between;
+    gap: 34px 30px;
+}
+
+/* .form__label_date {
+    position: relative;
+}
+
+.form__input_date {
+    width: 134px;
+    height: 52px;
+    border: none;
+    outline: none;
+}
+
+.form__input_date::after {
+    content: "Дата";
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 134px;
+    height: 52px;
+    background: url("../../icons/arrow_down.svg") no-repeat;
+    background-position: top 17px right 27px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+}
+
+.form__input_date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 5px;
+    right: 38px;
+    width: 7px;
+}
+
+.form__input_date:checked:after {
+    
+} */
+
+.form__input_date {
+    width: 134px;
+    height: 52px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.form__input_time {
+    width: 134px;
+    height: 52px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.form__input_number {
+    width: 300px;
+    height: 52px;
+    background: url("../../icons/arrow_down.svg") no-repeat;
+    background-position: top 17px right 27px;
+    background-color: #fff;
+    border: none;
+}
+
+.form__input_number::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+    padding: 0 20px;
+}
+
+
+.form__fieldset_name {
+    max-width: 280px;
+}
+
+.form__label_info {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.form__input_info {
+    width: 280px;
+    height: 52px;
+    margin-bottom: 14px;
+}
+
+.form__input_info:last-child {
+    margin-bottom: 0;
+}
+
+.form__fieldset_tel {
+    max-width: 300px;
+}
+
+.form__input_tel {
+    width: 300px;
+    height: 52px;
+    margin-bottom: 14px;
+}
+
+.form__input_tel:last-child {
+    margin-bottom: 0;
 }

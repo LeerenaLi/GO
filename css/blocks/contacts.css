@@ -1,3 +1,9 @@
+.contacts {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
 .contacts__title {
     margin-bottom: 54px;
 }
@@ -53,4 +59,26 @@
 
 .contacts__link:visited {
     color: #777477;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.contacts__block {
+    max-width: 380px;
+}
+
+.contacts__copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__copy {
+    max-width: 160px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
