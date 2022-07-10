@@ -1,4 +1,4 @@
-.btn_submit {
+.header__btn_submit {
     padding: 12px 30px 13px 30px;
     background-color: #1B1A1B;
     border: 3px solid #CD06FF;
@@ -10,15 +10,23 @@
     color: #FFFFFF;
 }
 
-.btn_submit:hover {
-    border: 3px solid #fff;
-    background-color: #fff;
-    color: #6C0287;
-    box-shadow: 0 0 20px #6C0287;
+.header__btn_submit:hover {
+    background: #6C0287;
+    border: 3px solid #6C0287;
     transition: 0.3s ease-in-out;
 }
 
-.btn_reserve {
+.header__btn_submit:active {
+    background: #640AA3;
+    border: 3px solid #640AA3;
+}
+
+.header__btn_submit:focus {
+    background: #6C0287;
+    border: 3px solid #6C0287;
+}
+
+.present__btn_reserve {
     padding: 25px 69px;
     background: #6C0287;
     box-shadow: 0 0 20px #6C0287;
@@ -31,25 +39,68 @@
     color: #FFFFFF;
 }
 
-.btn_reserve:hover {
-    background: #fff;
-    color: #6C0287;
+.present__btn_reserve:hover {
+    background: #840AA3;
     transition: 0.3s ease-in-out;
 }
 
-.btn_down {
+.present__btn_reserve:active {
+    background: #640AA3;
+}
+
+.present__btn_reserve:focus {
+    background: #840AA3;
+}
+
+.present__down {
     position: absolute;
     bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 100%;
     width: 97px;
     height: 97px;
 }
 
-.btn_down__img:hover {
-    box-shadow: 0 0 5px #fff;
+.present__down_link {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 97px;
+    border: 1px solid #fff;
     border-radius: 100%;
+    padding-bottom: 5px;
+}
+
+.present__down_link:hover {
+    background: #FFFFFF;
+}
+
+.present__down_link:hover svg {
+    fill: #6C0287;
+}
+
+.present__down_link:active {
+    background: #CD06FF;
+    border: 1px solid #CD06FF;
+}
+
+.present__down_link:active svg {
+    fill: #fff;
+}
+
+.present__down_link:focus {
+    background: url("../../icons/Ellipse1.svg");
+    background-size: 97px;
+    background-position: center;
+    border: 1px solid #CD06FF;
+    border-radius: 0;
+}
+
+.present__down_link:focus svg {
+    fill: #fff;
 }
 
 .form__btn {
@@ -58,6 +109,7 @@
     width: 300px;
     height: 60px;
     background: #FFFFFF;
+    border: 3px solid #fff;
     border-radius: 10px;
     font-weight: 700;
     font-size: 22px;
@@ -69,8 +121,17 @@
 }
 
 .form__btn:hover {
-    color: #fff;
-    background: #6C0287;
-    box-shadow: 0 0 10px #fff;
+    background: #EADEED;
+    border: 3px solid #6C0287;
     transition: 0.3s ease-in-out;
+}
+
+.form__btn:active {
+    background: #EADEED;
+    border: 3px solid #EADEED;
+}
+
+.form__btn:focus {
+    background: #FFFFFF;
+    border: 3px solid #6C0287;
 }

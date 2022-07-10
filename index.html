@@ -45,7 +45,7 @@
                         <a href="#contacts" class="navigation__link">Контакты</a>
                     </li>
                 </ul>
-                <button class="btn_submit" id="back-call" type="submit">Заказать звонок</button>
+                <button class="header__btn header__btn_submit" id="back-call" type="submit">Заказать звонок</button>
             </div>
         </div>
     </header>
@@ -59,19 +59,25 @@
     
                     <div class="present__advantage">
                         <div class="present__block">
-                            <p class="present__big_text">4</p>
+                            <p class="present__text present__text_big">4</p>
                             <p class="present__text">Тематических зала</p>    
                         </div>
                         <div class="present__block present__block_new">
-                            <p class="present__big_text present__big_text_new">new</p>
+                            <p class="present__text present__text_new">new</p>
                             <p class="present__text">Новейшая аппаратура</p>
                         </div>
                     </div>
-                    <button class="btn_reserve">Забронировать</button>
-    
-                    <a href="#down" class="btn_down" id="down">
-                        <img src="icons/down.svg" alt="down" class="btn_down__img">
-                    </a>
+                    <button class="present__btn present__btn_reserve">Забронировать</button>
+                    
+                    <div class="present__down">
+                        <a href="#down" class="present__down present__down_link" id="down">
+                            <svg width="29" height="30" viewbox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.425293" y="14.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 0.425293 14.9162)" />
+                                <rect x="14.5806" y="29.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 14.5806 29.0737)" />
+                            </svg>
+                        </a>
+                    </div>
+                    
                 </div>   
             </div>
         </section>
@@ -392,7 +398,7 @@
                 </div>
                 
                 <div class="contacts__map">
-                    <img src="img/map.jpg" alt="map" class="contacts__map_img">
+                    <img src="img/map.jpg" alt="map" class="contacts__map contacts__map_img">
                 </div>
             </div>
 

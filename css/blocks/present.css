@@ -47,7 +47,13 @@
     max-width: 166px;
 }
 
-.present__big_text {
+.present__text {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.present__text_big {
     font-weight: 900;
     font-size: 100px;
     line-height: 141px;
@@ -55,7 +61,7 @@
     text-align: center;
 }
 
-.present__big_text_new {
+.present__text_new {
     font-weight: 900;
     font-size: 75px;
     line-height: 106px;
@@ -63,10 +69,6 @@
     color: #CD06FF;  
 }
 
-.present__text {
-    font-size: 30px;
-    line-height: 34px;
-    text-align: center;
-}
+
 
 

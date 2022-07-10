@@ -19,13 +19,15 @@
 }
 
 .social__link:hover {
-    color: #CD06FF;
+    color: #EADEED;
 }
 
-.social__link:active {
-    color: #840AA3;
+.social__link:active svg {
+    fill: #CD06FF;
 }
 
 .social__link:focus {
+    color: #EADEED;
     outline-color: #CD06FF;
+    border-radius: 0;
 }

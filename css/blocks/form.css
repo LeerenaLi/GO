@@ -25,6 +25,10 @@
     position: relative;
 }
 
+.form__input {
+    outline: none;
+}
+
 .form__btn {
     padding: 5px;
 }
@@ -54,7 +58,7 @@
     height: 51px;
     background: #FFFFFF;
     border-radius: 8px;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -80,8 +84,8 @@
 }
 
 .form__input_halls:hover:after {
-    box-shadow: 0 0 10px #ffffff;
-    transition: 0.3s ease-in-out;
+    background: #EADEED;
+    border: 3px solid #640AA3;
 }
 
 .form__input_halls::before {
@@ -96,7 +100,7 @@
     height: 51px;
     background: #6C0287;
     border-radius: 8px;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -126,15 +130,65 @@
     opacity: 1;
 }
 
+.form__input_halls:checked:focus:before {
+    background: #6C0287;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.form__input_halls:checked:focus:before {
+    background: #FFFFFF;
+    border: 3px solid #640AA3;
+    color: #000000;
+}
+
 .form__label_radio {
     display: flex;
     align-items: center;
     gap: 12px;
+    position: relative;
+    height: 27px;
 }
 
 .form__input_radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form__input_radio::after {
+    content: '';
+    display: block;
     width: 27px;
     height: 27px;
+    background: #FFFFFF;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.form__input_radio:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    background-color:black;
+    border-radius: 100%;
+    border: 6px solid #fff;
+}
+
+.form__input_radio:checked::before {
+    opacity: 1;
+}
+
+.form__input_radio:focus::after {
+    outline: 1px solid #CD06FF;
+    border-radius: 0;
+    background-color: #440F51;
+    border: none;
 }
 
 .form__fieldset_games {
@@ -161,11 +215,45 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    position: relative;
+    height: 27px;
 }
 
 .form__input_game {
-    width: 25px;
-    height: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form__input_game::after {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: #FFFFFF;
+    border: 1px solid #fff;
+}
+
+.form__input_game::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: block;
+    width: 16px;
+    height: 8px;
+    opacity: 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+}
+
+.form__input_game:checked:before {
+    opacity: 1;
+}
+
+.form__input_game:focus::after {
+    border: 1px solid #CD06FF;
 }
 
 .form__fieldset_information {
@@ -185,43 +273,6 @@
     justify-content: space-between;
     gap: 34px 30px;
 }
-
-/* .form__label_date {
-    position: relative;
-}
-
-.form__input_date {
-    width: 134px;
-    height: 52px;
-    border: none;
-    outline: none;
-}
-
-.form__input_date::after {
-    content: "Дата";
-    display: inline-flex;
-    align-items: center;
-    padding-left: 20px;
-    width: 134px;
-    height: 52px;
-    background: url("../../icons/arrow_down.svg") no-repeat;
-    background-position: top 17px right 27px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #211E1E;
-}
-
-.form__input_date::-webkit-calendar-picker-indicator {
-    position: absolute;
-    top: 5px;
-    right: 38px;
-    width: 7px;
-}
-
-.form__input_date:checked:after {
-    
-} */
 
 .form__input_date {
     width: 134px;
@@ -248,6 +299,7 @@
     background-position: top 17px right 27px;
     background-color: #fff;
     border: none;
+    padding: 10px;
 }
 
 .form__input_number::placeholder {
@@ -275,6 +327,11 @@
     width: 280px;
     height: 52px;
     margin-bottom: 14px;
+    padding: 10px;
+}
+
+.form__input_info:focus {
+    border: 2px solid #CD06FF;
 }
 
 .form__input_info:last-child {
@@ -289,6 +346,11 @@
     width: 300px;
     height: 52px;
     margin-bottom: 14px;
+    padding: 10px;
+}
+
+.form__input_tel:focus {
+    border: 2px solid #CD06FF;
 }
 
 .form__input_tel:last-child {
