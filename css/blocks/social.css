@@ -20,14 +20,17 @@
 
 .social__link:hover {
     color: #EADEED;
+    transition: 0.3s ease-in-out;
 }
 
 .social__link:active svg {
     fill: #CD06FF;
+    transition: 0.3s ease-in-out;
 }
 
 .social__link:focus {
     color: #EADEED;
     outline-color: #CD06FF;
     border-radius: 0;
+    transition: 0.3s ease-in-out;
 }

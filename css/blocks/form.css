@@ -86,6 +86,7 @@
 .form__input_halls:hover:after {
     background: #EADEED;
     border: 3px solid #640AA3;
+    transition: 0.3s ease-in-out;
 }
 
 .form__input_halls::before {
@@ -128,18 +129,14 @@
 
 .form__input_halls:checked:before {
     opacity: 1;
-}
-
-.form__input_halls:checked:focus:before {
-    background: #6C0287;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
 }
 
 .form__input_halls:checked:focus:before {
     background: #FFFFFF;
     border: 3px solid #640AA3;
     color: #000000;
+    transition: 0.3s ease-in-out;
 }
 
 .form__label_radio {
@@ -182,6 +179,7 @@
 
 .form__input_radio:checked::before {
     opacity: 1;
+    transition: 0.3s ease-in-out;
 }
 
 .form__input_radio:focus::after {
@@ -189,6 +187,7 @@
     border-radius: 0;
     background-color: #440F51;
     border: none;
+    transition: 0.3s ease-in-out;
 }
 
 .form__fieldset_games {
@@ -250,10 +249,12 @@
 
 .form__input_game:checked:before {
     opacity: 1;
+    transition: 0.3s ease-in-out;
 }
 
 .form__input_game:focus::after {
     border: 1px solid #CD06FF;
+    transition: 0.3s ease-in-out;
 }
 
 .form__fieldset_information {
@@ -332,6 +333,7 @@
 
 .form__input_info:focus {
     border: 2px solid #CD06FF;
+    transition: 0.3s ease-in-out;
 }
 
 .form__input_info:last-child {
@@ -351,6 +353,7 @@
 
 .form__input_tel:focus {
     border: 2px solid #CD06FF;
+    transition: 0.3s ease-in-out;
 }
 
 .form__input_tel:last-child {

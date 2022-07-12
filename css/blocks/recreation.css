@@ -11,40 +11,33 @@
     gap: 40px 20px;
 }
 
+.recreation__link {
+    display: block;
+    position: relative;
+    width: 380px;
+    height: 228px;
+    
+}
+
 .recreation__item {
-    flex-basis: 380px;
-    max-width: 380px;
-    min-height: 228px;
-    padding-top: 166px;
-    padding-left: 40px;
+    width: 380px;
+    height: 228px;
+    perspective: 418px;
 }
 
-.recreation__item_vr {
-    background-image: url("../../img/vr.jpg");
+.recreation__link:hover {
+    transform: translateZ(38px);
+    transition: 0.5s ease-in-out;
 }
 
-.recreation__item_audio {
-    background-image: url("../../img/audio.jpg");
-}
-
-.recreation__item_karaoke {
-    background-image: url("../../img/karaoke.jpg");
-}
-
-.recreation__item_games {
-    background-image: url("../../img/games.jpg");
-}
-
-.recreation__item_netflix {
-    background-image: url("../../img/netflix.jpg");
-}
-
-.recreation__item_play {
-    background-image: url("../../img/play_station.jpg");    
-}
-
-.recreation__descr {
+.recreation__text {
+    position: absolute;
+    top: 166px;
+    left: 40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
 }
+
+
+

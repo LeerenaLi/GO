@@ -19,11 +19,13 @@
 .header__btn_submit:active {
     background: #640AA3;
     border: 3px solid #640AA3;
+    transition: 0.3s ease-in-out;
 }
 
 .header__btn_submit:focus {
     background: #6C0287;
     border: 3px solid #6C0287;
+    transition: 0.3s ease-in-out;
 }
 
 .present__btn_reserve {
@@ -46,10 +48,12 @@
 
 .present__btn_reserve:active {
     background: #640AA3;
+    transition: 0.3s ease-in-out;
 }
 
 .present__btn_reserve:focus {
     background: #840AA3;
+    transition: 0.3s ease-in-out;
 }
 
 .present__down {
@@ -76,19 +80,23 @@
 
 .present__down_link:hover {
     background: #FFFFFF;
+    transition: 0.3s ease-in-out;
 }
 
 .present__down_link:hover svg {
     fill: #6C0287;
+    transition: 0.3s ease-in-out;
 }
 
 .present__down_link:active {
     background: #CD06FF;
     border: 1px solid #CD06FF;
+    transition: 0.3s ease-in-out;
 }
 
 .present__down_link:active svg {
     fill: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 .present__down_link:focus {
@@ -97,10 +105,12 @@
     background-position: center;
     border: 1px solid #CD06FF;
     border-radius: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .present__down_link:focus svg {
     fill: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 .form__btn {
@@ -124,14 +134,17 @@
     background: #EADEED;
     border: 3px solid #6C0287;
     transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .form__btn:active {
     background: #EADEED;
     border: 3px solid #EADEED;
+    transition: 0.3s ease-in-out;
 }
 
 .form__btn:focus {
     background: #FFFFFF;
     border: 3px solid #6C0287;
+    transition: 0.3s ease-in-out;
 }
