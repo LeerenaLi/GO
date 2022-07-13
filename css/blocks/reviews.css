@@ -19,10 +19,22 @@
 }
 
 .reviews__photo {
+    position: relative;
     max-width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.reviews__photo::after {
+    content: '';
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+    border-radius: 140px;
 }
 
 .reviews__img {
