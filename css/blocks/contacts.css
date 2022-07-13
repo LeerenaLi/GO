@@ -42,26 +42,26 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--white-color, #fff);
 }
 
 .contacts__link:hover {
-    color: #CD06FF;
+    color: var(--main-color, #CD06FF);
     transition: 0.3s ease-in-out;
 }
 
 .contacts__link:active {
-    color: #440F51;
+    color: var(--dark-indigo-color, #440F51);
     transition: 0.3s ease-in-out;
 }
 
 .contacts__link:focus {
-    background-color: #777477;
+    background-color: var(--light-silver-color, #777477);
     transition: 0.3s ease-in-out;
 }
 
 .contacts__link:visited {
-    color: #777477;
+    color: var(--light-silver-color, #777477);
     transition: 0.3s ease-in-out;
 }
 

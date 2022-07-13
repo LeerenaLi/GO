@@ -1,0 +1,15 @@
+:root {
+    --text-color: #FFFFFF;
+    --bcg-color: #1B1A1B;
+    --white-color: #fff;
+}
+
+.header, .main, .contacts {
+    --main-color: #CD06FF;
+    --dark-purple-color: #6C0287;
+    --light-purple-color: #840AA3;
+    --light-indigo-color: #640AA3;
+    --dark-indigo-color: #440F51;
+    --transparent-magenta-color: #EADEED;
+    --light-silver-color: #777477;
+}

@@ -1,5 +1,5 @@
 .reserve {
-    background: #440F51;
+    background: var(--dark-indigo-color, #440F51);
     padding: 80px 0;
     min-height: 1114px;
 }

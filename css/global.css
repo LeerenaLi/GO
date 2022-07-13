@@ -16,8 +16,8 @@ body {
     font-family: -apple-system, 'Arial', 'Segoe UI', 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 400;
-    color: #FFFFFF;
-    background-color: #1B1A1B;
+    color: var(--text-color, #FFFFFF);
+    background-color: var(--bcg-color, #1B1A1B);
 }
 
 img {

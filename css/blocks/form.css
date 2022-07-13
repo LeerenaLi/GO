@@ -56,9 +56,9 @@
     align-items: center;
     width: 246px;
     height: 51px;
-    background: #FFFFFF;
+    background: var(--white-color, #fff);
     border-radius: 8px;
-    border: 3px solid #fff;
+    border: 3px solid var(--white-color, #fff);
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -84,8 +84,8 @@
 }
 
 .form__input_halls:hover:after {
-    background: #EADEED;
-    border: 3px solid #640AA3;
+    background: var(--transparent-magenta-color, #EADEED);
+    border: 3px solid var(--light-indigo-color, #640AA3);
     transition: 0.3s ease-in-out;
 }
 
@@ -99,14 +99,14 @@
     align-items: center;
     width: 246px;
     height: 51px;
-    background: #6C0287;
+    background: var(--dark-purple-color, #6C0287);
     border-radius: 8px;
-    border: 3px solid #fff;
+    border: 3px solid var(--white-color, #fff);
     text-align: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
-    color: #fff;
+    color: var(--white-color, #fff);
     opacity: 0;
     cursor: pointer;
 }
@@ -133,8 +133,8 @@
 }
 
 .form__input_halls:checked:focus:before {
-    background: #FFFFFF;
-    border: 3px solid #640AA3;
+    background: var(--white-color, #fff);
+    border: 3px solid var(--light-indigo-color, #640AA3);
     color: #000000;
     transition: 0.3s ease-in-out;
 }
@@ -158,8 +158,8 @@
     display: block;
     width: 27px;
     height: 27px;
-    background: #FFFFFF;
-    border: 1px solid #fff;
+    background: var(--white-color, #fff);
+    border: 1px solid var(--white-color, #fff);
     border-radius: 100%;
 }
 
@@ -174,7 +174,7 @@
     opacity: 0;
     background-color:black;
     border-radius: 100%;
-    border: 6px solid #fff;
+    border: 6px solid var(--white-color, #fff);
 }
 
 .form__input_radio:checked::before {
@@ -183,9 +183,9 @@
 }
 
 .form__input_radio:focus::after {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--main-color, #CD06FF);
     border-radius: 0;
-    background-color: #440F51;
+    background-color: var(--dark-indigo-color, #440F51);
     border: none;
     transition: 0.3s ease-in-out;
 }
@@ -229,8 +229,8 @@
     display: block;
     width: 27px;
     height: 27px;
-    background: #FFFFFF;
-    border: 1px solid #fff;
+    background: var(--white-color, #fff);
+    border: 1px solid var(--white-color, #fff);
 }
 
 .form__input_game::before {
@@ -253,7 +253,7 @@
 }
 
 .form__input_game:focus::after {
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--main-color, #CD06FF);
     transition: 0.3s ease-in-out;
 }
 
@@ -298,7 +298,7 @@
     height: 52px;
     background: url("../../icons/arrow_down.svg") no-repeat;
     background-position: top 17px right 27px;
-    background-color: #fff;
+    background-color: var(--white-color, #fff);
     border: none;
     padding: 10px;
 }
@@ -332,7 +332,7 @@
 }
 
 .form__input_info:focus {
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--main-color, #CD06FF);
     transition: 0.3s ease-in-out;
 }
 
@@ -352,7 +352,7 @@
 }
 
 .form__input_tel:focus {
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--main-color, #CD06FF);
     transition: 0.3s ease-in-out;
 }
 

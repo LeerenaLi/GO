@@ -11,6 +11,6 @@
 }
 
 .navigation__link:hover {
-    color: #CD06FF;
+    color: var(--main-color, #CD06FF);
     transition: 0.3s ease-in-out;
 }
