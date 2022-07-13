@@ -4,25 +4,34 @@
     margin-bottom: 41px;
 }
 
-.recreation__list {
+.recreation__wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px 20px;
 }
 
-.recreation__link {
-    display: block;
-    position: relative;
-    width: 380px;
-    height: 228px;
-    
+.recreation__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.recreation__list_offset {
+    padding-top: 70px;
 }
 
 .recreation__item {
     width: 380px;
     height: 228px;
     perspective: 418px;
+}
+
+.recreation__link {
+    display: block;
+    position: relative;
+    width: 380px;
+    height: 228px; 
 }
 
 .recreation__link:hover {
