@@ -20,6 +20,34 @@
     <title>Game Over</title>
 </head>
 <body>
+    <!-- modal window -->
+    <div id="open-modal" class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__block">
+                
+                <div class="modal__close">
+                    <svg width="42" height="42" viewbox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="38.1838" width="54" height="5" rx="2" transform="rotate(-45 0 38.1838)" />
+                        <rect x="3.53564" width="54" height="5" rx="2" transform="rotate(45 3.53564 0)" />
+                    </svg>
+                </div>
+                <p class="modal__title">Заказать звонок:</p>
+                <form class="form-modal" id="form-modal" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
+                    <fieldset class="form-modal__fieldset">
+                        <label for="name" class="form-modal__label">Ваше имя:</label>
+                        <input type="text" class="form-modal__input" name="name" id="name" required>
+    
+                        <label for="phone" class="form-modal__label">Номер телефона:</label>
+                        <input type="tel" class="form-modal__input" name="phone" id="phone" title="+7___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required>
+                    </fieldset>
+                    <button type="submit" class="form-modal__btn form__btn">Отправить</button>
+                </form>
+            </div>
+           
+           
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -45,7 +73,8 @@
                         <a href="#contacts" class="navigation__link">Контакты</a>
                     </li>
                 </ul>
-                <button class="header__btn header__btn_submit" id="back-call" type="submit">Заказать звонок</button>
+                <a href="#open-modal" class="header__btn header__btn_submit">Заказать звонок</a>
+                
             </div>
         </div>
     </header>
@@ -70,7 +99,7 @@
                     <button class="present__btn present__btn_reserve">Забронировать</button>
                     
                     <div class="present__down">
-                        <a href="#down" class="present__down present__down_link" id="down">
+                        <a href="#down" class="present__down present__down_link">
                             <svg width="29" height="30" viewbox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.425293" y="14.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 0.425293 14.9162)" />
                                 <rect x="14.5806" y="29.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 14.5806 29.0737)" />
@@ -82,7 +111,7 @@
             </div>
         </section>
     
-        <section class="recreation">
+        <section class="recreation" id="down">
             <div class="container">
                 <h2 class="recreation__title title-h2">У нас есть все для классного отдыха с друзьями!</h2>
                 <div class="recreation__wrapper">
@@ -436,5 +465,7 @@
             </div>
         </div>   
     </footer>   
+
+    <script src="js/modal.js"></script>
 </body>
 </html>
