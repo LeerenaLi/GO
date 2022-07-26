@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 8px;
 }
 
 .navigation__link {
@@ -13,4 +14,20 @@
 .navigation__link:hover {
     color: var(--main-color, #CD06FF);
     transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1240px) {
+    .navigation {
+        gap: 20px;
+    }
+    .navigation__link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 840px) {
+    .navigation {
+        display: none;
+    }
 }

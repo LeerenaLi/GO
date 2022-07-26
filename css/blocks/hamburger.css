@@ -1,0 +1,43 @@
+.hamburger {
+    width: 54px;
+    min-height: 29px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger__long {
+    display: block;
+    width: 54px;
+    height: 5px;
+    background: var(--dark-purple-color, #6C0287);
+    margin-bottom: 7px;
+}
+
+.hamburger__short {
+    display: block;
+    width: 31px;
+    height: 5px;
+    background: var(--dark-purple-color, #6C0287);
+}
+
+@media (max-width: 840px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 440px) {
+    .hamburger {
+        width: 39px;
+        min-height: 20px;
+    }
+    .hamburger__long {
+        width: 39px;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    .hamburger__short {
+        width: 22px;
+        height: 4px;
+    }
+}

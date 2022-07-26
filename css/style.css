@@ -1,5 +1,6 @@
 @import "variables.css";
 @import "blocks/modal.css";
+@import "blocks/hamburger.css";
 @import "blocks/header.css";
 @import "blocks/navigation.css";
 @import "blocks/buttons.css";

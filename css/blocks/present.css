@@ -6,10 +6,11 @@
 .present__title {
     font-weight: 900;
     font-size: 150px;
-    line-height: 100%;
+    line-height: 89%;
     text-transform: uppercase;
     letter-spacing: -0.1em;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .present__title::after {
@@ -20,7 +21,7 @@
     height: 762px;
     position: absolute;
     right: 0;
-    bottom: 0; 
+    bottom: 7px; 
 }
 
 .present__subtitle {
@@ -32,7 +33,7 @@
 .present__advantage {
     display: flex;
     gap: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 149px;
 }
 
 .present__block {

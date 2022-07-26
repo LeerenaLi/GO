@@ -89,3 +89,22 @@ h1, h2, h3, p, figure, fieldset {
 section {
     padding: 50px 0;
 }
+
+@media (max-width: 1240px) {
+    .container {
+        max-width: 964px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        max-width: 748px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container {
+        padding: 0 20px;
+    }
+}
