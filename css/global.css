@@ -95,6 +95,10 @@ section {
         max-width: 964px;
         padding: 0 30px;
     }
+    .title-h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 840px) {

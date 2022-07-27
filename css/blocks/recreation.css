@@ -1,23 +1,21 @@
+.recreation {
+    padding-top: 43px;
+    padding-bottom: 120px;
+}
 .recreation__title {
     max-width: 880px;
     margin: 0 auto;
     margin-bottom: 41px;
 }
 
-.recreation__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .recreation__list {
     display: flex;
-    flex-direction: column;
-    max-width: 380px;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 40px;
 }
 
-.recreation__list_offset {
+.recreation__item_down {
     padding-top: 70px;
 }
 
@@ -28,10 +26,46 @@
 }
 
 .recreation__link {
-    display: block;
     position: relative;
     width: 380px;
     height: 228px; 
+    padding: 31px 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.recreation__link_audio, .recreation__link_servises {
+    padding: 4px 40px;
+}
+
+.recreation__link_vr {
+    background: url("../../img/vr.jpg") no-repeat;
+    background-size: inherit;
+}
+
+.recreation__link_audio {
+    background: url("../../img/audio.jpg") no-repeat;
+    background-size: inherit;
+}
+
+.recreation__link_karaoke {
+    background: url("../../img/karaoke.jpg") no-repeat;
+    background-size: inherit;
+}
+
+.recreation__link_games {
+    background: url("../../img/games.jpg") no-repeat;
+    background-size: inherit;
+}
+
+.recreation__link_servises {
+    background: url("../../img/netflix.jpg") no-repeat;
+    background-size: inherit;
+}
+
+.recreation__link_play {
+    background: url("../../img/play_station.jpg") no-repeat;
+    background-size: inherit;
 }
 
 .recreation__link:hover {
@@ -40,12 +74,207 @@
 }
 
 .recreation__text {
-    position: absolute;
-    top: 166px;
-    left: 40px;
+    max-width: 300px;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+}
+
+@media (max-width: 1240px) {
+    .recreation {
+        padding: 33px 0 83px 0;
+    }
+    .recreation__title {
+        max-width: 540px;
+        margin-bottom: 36px;
+    }
+    .recreation__list {
+        row-gap: 30px;
+    }
+    .recreation__item_down {
+        padding-top: 53px;
+    }
+    .recreation__item, .recreation__link {
+        width: 287px;
+        height: 172px;
+        perspective: 306px;
+    }
+    .recreation__link {
+        padding: 31px 20px;
+    }
+    .recreation__link_audio, .recreation__link_servises {
+        padding: 5px 20px;
+    }
+    .recreation__text {
+        max-width: 247px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .recreation__link_vr {
+        background: url("../../img/vr_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_audio {
+        background: url("../../img/audio_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_karaoke {
+        background: url("../../img/karaoke_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_games {
+        background: url("../../img/games_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_servises {
+        background: url("../../img/netflix_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_play {
+        background: url("../../img/play_station_1024.jpg") no-repeat;
+    }
+}
+
+@media (max-width: 940px) {
+    .recreation {
+        padding: 40px 0 30px 0;
+    }
+    .recreation__title {
+        max-width: 430px;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    .recreation__list {
+        row-gap: 20px;
+    }
+    .recreation__item_down {
+        padding-top: 0;
+    }
+    .recreation__item, .recreation__link {
+        width: 334px;
+        height: 200px;
+        perspective: 356px;
+    }
+    .recreation__link {
+        padding: 40px 30px;
+    }
+    .recreation__link_audio, .recreation__link_servises {
+        padding: 12px 30px;
+    }
+    .recreation__text {
+        max-width: 274px;
+    }
+    .recreation__link_vr {
+        background: url("../../img/vr_768.jpg") no-repeat;
+    }
+    
+    .recreation__link_audio {
+        background: url("../../img/audio_768.jpg") no-repeat;
+    }
+    
+    .recreation__link_karaoke {
+        background: url("../../img/karaoke_768.jpg") no-repeat;
+    }
+    
+    .recreation__link_games {
+        background: url("../../img/games_768.jpg") no-repeat;
+    }
+    
+    .recreation__link_servises {
+        background: url("../../img/netflix_768.jpg") no-repeat;
+    }
+    
+    .recreation__link_play {
+        background: url("../../img/play_station_768.jpg") no-repeat;
+    }
+}
+
+@media (max-width: 750px) {
+    .recreation__item, .recreation__link {
+        width: 287px;
+        height: 172px;
+        perspective: 306px;
+    }
+    .recreation__link_vr {
+        background: url("../../img/vr_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_audio {
+        background: url("../../img/audio_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_karaoke {
+        background: url("../../img/karaoke_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_games {
+        background: url("../../img/games_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_servises {
+        background: url("../../img/netflix_1024.jpg") no-repeat;
+    }
+    
+    .recreation__link_play {
+        background: url("../../img/play_station_1024.jpg") no-repeat;
+    } 
+}
+
+@media (max-width: 650px) {
+    .recreation {
+        padding: 20px 0 15px 0;
+    }
+    .recreation__title {
+        max-width: 280px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .recreation__list {
+        row-gap: 10px;
+    }
+    .recreation__item, .recreation__link {
+        width: 135px;
+        height: 75px;
+        perspective: none;
+    }
+    .recreation__link {
+        padding: 30px 10px 0 10px;
+        align-items: flex-start;
+    }
+    .recreation__link_audio, .recreation__link_servises {
+        padding: 30px 10px 0 10px;
+
+    }
+    .recreation__text {
+        max-width: 115px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .recreation__link_vr {
+        background: url("../../img/vr_320.jpg") no-repeat;
+    }
+    
+    .recreation__link_audio {
+        background: url("../../img/audio_320.jpg") no-repeat;
+    }
+    
+    .recreation__link_karaoke {
+        background: url("../../img/karaoke_320.jpg") no-repeat;
+    }
+    
+    .recreation__link_games {
+        background: url("../../img/games_320.jpg") no-repeat;
+    }
+    
+    .recreation__link_servises {
+        background: url("../../img/netflix_320.jpg") no-repeat;
+    }
+    
+    .recreation__link_play {
+        background: url("../../img/play_station_320.jpg") no-repeat;
+    } 
 }
 
 
