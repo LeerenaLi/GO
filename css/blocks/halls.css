@@ -48,7 +48,7 @@
 
 @media (max-width: 1240px) {
     .halls {
-        padding: 40px 0 71px 0;
+        padding: 40px 0 67px 0;
     }
     .halls__title {
         margin-bottom: 37px;
@@ -85,6 +85,9 @@
     .halls__title {
         margin-bottom: 35px;
     }
+    .halls__list {
+        justify-content: center;
+    }
     .halls__item {
         width: 335px;
         height: 200px;
@@ -109,12 +112,6 @@
         font-size: 40px;
         line-height: 50px;
         padding-top: 26px;
-    }
-}
-
-@media (max-width: 950px) {
-    .halls__list {
-        justify-content: center;
     }
 }
 
