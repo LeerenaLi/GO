@@ -34,3 +34,24 @@
     border-radius: 0;
     transition: 0.3s ease-in-out;
 }
+
+@media (max-width: 1240px) {
+    .social {
+        width: 238px;
+        margin: 0 auto;
+    }
+    .social__link {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .social {
+        width: 180px;
+    }
+    .social__link {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -57,6 +57,7 @@
     .reviews {
         padding-top: 35px;
         padding-bottom: 35px;
+        min-height: 803px;
     }
     .reviews__title {
         margin-bottom: 25px;
@@ -95,6 +96,7 @@
     .reviews {
         padding-top: 32px;
         padding-bottom: 30px;
+        min-height: 697px;
     }
     .reviews__title {
         margin-bottom: 30px;
