@@ -225,6 +225,16 @@
     }
 }
 
+@media (max-width: 640px) {
+    .form-modal__btn {
+        width: 214px;
+        height: 46px;
+        font-size: 14px;
+        line-height: 24px;
+        position: absolute;
+    }
+}
+
 @media (max-width: 440px) {
     .header__btn {
         display: none;

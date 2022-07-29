@@ -62,3 +62,19 @@
     background-color: #fff;
     opacity: 0.75;
 }
+
+@media (max-width: 640px) {
+    .modal {
+        padding-top: 50px;
+    }
+    .modal__wrapper {
+        width: 320px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 440px) {
+    .modal {
+        display: none;
+    }
+}
