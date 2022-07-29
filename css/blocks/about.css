@@ -260,7 +260,7 @@
         margin-bottom: 14px;
     }
     .about__wrapper {
-        margin: 0 auto;
+        width: 280px;
         display: grid;
         grid-template-columns: 140px 140px;
         grid-template-rows: 127px 280px 149px;
