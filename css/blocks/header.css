@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.header__logo_1024, .header__logo_320 {
+.header__logo-1024, .header__logo-320 {
     display: none;
 }
 
@@ -27,7 +27,7 @@
     .header__logo {
         display: none;
     }
-    .header__logo_1024 {
+    .header__logo-1024 {
         display: block;
     }
 }
@@ -42,10 +42,10 @@
     .header {
         padding-top: 20px;
     }
-    .header__logo_1024 {
+    .header__logo-1024 {
         display: none;
     }
-    .header__logo_320 {
+    .header__logo-320 {
         display: block;
     }
 }
