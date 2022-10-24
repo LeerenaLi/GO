@@ -173,6 +173,72 @@
     margin: 0 auto;
 }
 
+.questions__btn_odd {
+    background: url("../../icons/plus_purple.svg") no-repeat;
+    background-size: 20px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 69px;
+    top: 21px;
+    border: 1px solid var(--dark-purple-color, #6C0287);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.questions__btn_odd:hover {
+    background: url("../../icons/plus_white.svg") no-repeat;
+    background-size: 20px;
+    background-position: center;
+    background-color: var(--dark-purple-color, #6C0287);
+    border: 1px solid var(--dark-purple-color, #6C0287);
+    transition: 0.3s ease-in-out;
+}
+
+.questions__btn_odd.active {
+    background: url("../../icons/minus__purple.svg") no-repeat;
+    background-size: 20px;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+
+.questions__btn_even {
+    background: url("../../icons/plus_white.svg") no-repeat;
+    background-size: 20px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 69px;
+    top: 21px; 
+    border: 1px solid var(--white-color, #fff);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.questions__btn_even:hover {
+    background: url("../../icons/plus_purple.svg") no-repeat;
+    background-size: 20px;
+    background-position: center;
+    background-color: var(--white-color, #fff);
+    border: 1px solid var(--white-color, #fff);
+    transition: 0.3s ease-in-out;
+}
+
+.questions__btn_even.active {
+    background: url("../../icons/minus__white.svg") no-repeat;
+    background-size: 20px;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+
 @media (max-width: 1240px) {
     .header__btn {
         width: 229px;
