@@ -44,6 +44,11 @@ const formControl = (closeModal) => {
         if (!inputName.value || !inputPhone.value) {
             return;
         } else {
+            const contact = {
+                name: inputName.value,
+                phone: inputPhone.value,
+            };
+            console.log('contact: ', contact);
             closeModal();
         }
     });

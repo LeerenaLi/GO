@@ -10,12 +10,12 @@ textWrapper.forEach(elem => {
     }
 });
 
-buttons.forEach((btn, index) => {
-    btn.addEventListener('click', (e) => {
+items.forEach((item, index) => {
+    item.addEventListener('click', (e) => {
         const target = e.target;
 
-        buttons.forEach(button => {
-            if (button === target) {
+        buttons.forEach((button, btnIndex) => {
+            if (button === target || index === btnIndex) {
                 button.classList.toggle('active');
             } else {
                 button.classList.remove('active');
@@ -35,3 +35,5 @@ buttons.forEach((btn, index) => {
         }
     });
 });
+
+
