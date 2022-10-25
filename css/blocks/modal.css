@@ -19,8 +19,7 @@
 .modal__wrapper {
     position: relative;
     width: 600px;
-    /* height: 498px; */
-    /* padding: 50px; */
+    min-height: 460px;
     background: var(--dark-indigo-color, #440F51);
     margin: 0 auto;
     z-index: 100;
