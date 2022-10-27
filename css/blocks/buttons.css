@@ -316,6 +316,14 @@
     .header__btn {
         display: none;
     }
+    .header__btn_mini {
+        display: flex;
+        margin: 0 auto;
+        width: 184px;
+        height: 37px;
+        font-size: 14px;
+        line-height: 14px;
+    }
     .present__btn {
         width: 117px;
         height: 27px;

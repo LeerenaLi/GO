@@ -11,6 +11,7 @@
     height: 5px;
     background: var(--dark-purple-color, #6C0287);
     margin-bottom: 7px;
+    transition: 0.5s all;
 }
 
 .hamburger__short {
@@ -18,11 +19,26 @@
     width: 31px;
     height: 5px;
     background: var(--dark-purple-color, #6C0287);
+    transition: 0.5s all;
 }
 
 @media (max-width: 840px) {
     .hamburger {
         display: block;
+    }
+    .hamburger__active .hamburger__short {
+        display: none;
+    }
+    .hamburger__active .hamburger__long {
+        margin-bottom: 0;
+    }
+    .hamburger__active .hamburger__long:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+        margin-bottom: -4px;
+    }
+    .hamburger__active .hamburger__long:nth-child(2) {
+        transform: translateY(3px) rotate(45deg);
+        transition: 0.5s all;
     }
 }
 
