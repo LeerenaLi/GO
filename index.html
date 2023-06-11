@@ -14,11 +14,14 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Game Over</title>
 
+    <script defer src="js/libs/just-validate.production.min.js"></script>
+    <script defer src="js/libs/inputmask.min.js"></script>
+    <script defer src="js/libs/axios.min.js"></script>
+    <script defer src="js/libs/swiper-bundle.min.js"></script>
     <script src="js/script.js" type="module"></script>
 
 </head>
@@ -33,13 +36,14 @@
                 </svg>
             </div>
             <p class="modal__title">Заказать звонок:</p>
-            <form class="form-modal" id="form-modal" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
+            <form class="form-modal" id="form-modal">
                 <fieldset class="form-modal__fieldset">
-                    <label for="name" class="form-modal__label">Ваше имя:</label>
-                    <input type="text" class="form-modal__input" name="name" id="name" required>
-
-                    <label for="phone" class="form-modal__label">Номер телефона:</label>
-                    <input type="tel" class="form-modal__input" name="phone" id="phone" title="+7___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required>
+                    <label for="name" class="form-modal__label">Ваше имя:
+                        <input type="text" class="form-modal__input" name="name" id="name" placeholder="Ваше имя">
+                    </label>
+                    <label for="phone" class="form-modal__label">Номер телефона:
+                        <input type="tel" class="form-modal__input" name="phone" id="phone" placeholder="Ваш телефон">
+                    </label>
                 </fieldset>
                 <button type="submit" class="form-modal__btn">Отправить</button>
             </form>
@@ -80,7 +84,7 @@
                         <a href="#contacts" class="navigation__link">Контакты</a>
                     </li>
                     <li class="navigation__item navigation__item_mini">
-                        <a href="#open-modal" class="header__btn header__btn_mini">Заказать звонок</a>
+                        <a href="#open-modal" class="navigation__btn">Заказать звонок</a>
                     </li>
                 </ul>
                 <a href="#open-modal" class="header__btn">Заказать звонок</a>
@@ -348,39 +352,45 @@
             </div>
         </section>
     
-        <section class="reviews" id="reviews">
+        <section class="reviews slider" id="reviews">
             <div class="container">
                 <h2 class="reviews__title title-h2">Отзывы посетителей</h2>
     
-                <ul class="reviews__list">
-                    <li class="reviews__item">
-                        <div class="reviews__photo">
-                            <img src="img/Max.png" alt="Макс Самойлов" class="reviews__img">
-                            <p class="reviews__descr">Макс Самойлов</p>       
-                        </div>
-                        <p class="reviews__text">
-                            Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
-                        </p>
-                    </li>
-                    <li class="reviews__item">
-                        <div class="reviews__photo">
-                            <img src="img/Oksana.png" alt="Оксана Григорьева" class="reviews__img">
-                            <p class="reviews__descr">Оксана Григорьева</p>       
-                        </div>
-                        <p class="reviews__text">
-                            Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
-                        </p>
-                    </li>
-                    <li class="reviews__item">
-                        <div class="reviews__photo">
-                            <img src="img/Nikita.png" alt="Никита Ященко" class="reviews__img">
-                            <p class="reviews__descr">Никита Ященко</p>       
-                        </div>
-                        <p class="reviews__text">
-                            Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
-                        </p>
-                    </li>  
-                </ul>
+                <div class="slider__container">
+                    <div class="swiper slider__swiper">
+                        <ul class="reviews__list swiper-wrapper">
+                            <li class="reviews__item swiper-slide">
+                                <div class="reviews__photo">
+                                    <img src="img/Max.png" alt="Макс Самойлов" class="reviews__img">
+                                    <p class="reviews__descr">Макс Самойлов</p>       
+                                </div>
+                                <p class="reviews__text">
+                                    Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+                                </p>
+                            </li>
+                            <li class="reviews__item swiper-slide">
+                                <div class="reviews__photo">
+                                    <img src="img/Oksana.png" alt="Оксана Григорьева" class="reviews__img">
+                                    <p class="reviews__descr">Оксана Григорьева</p>       
+                                </div>
+                                <p class="reviews__text">
+                                    Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
+                                </p>
+                            </li>
+                            <li class="reviews__item swiper-slide">
+                                <div class="reviews__photo">
+                                    <img src="img/Nikita.png" alt="Никита Ященко" class="reviews__img">
+                                    <p class="reviews__descr">Никита Ященко</p>       
+                                </div>
+                                <p class="reviews__text">
+                                    Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
+                                </p>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="swiper-button-prev slider__prev"></div>
+                    <div class="swiper-button-next slider__next"></div>
+                </div>
             </div>
         </section>
         

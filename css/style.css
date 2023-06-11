@@ -1,7 +1,7 @@
-@import "global.css";
-@import "normalize.css";
+@import "libs/global.css";
+@import "libs/normalize.css";
+@import "libs/variables.css";
 
-@import "variables.css";
 @import "blocks/modal.css";
 @import "blocks/hamburger.css";
 @import "blocks/header.css";
@@ -17,6 +17,7 @@
 @import "blocks/contacts.css";
 @import "blocks/social.css";
 @import "blocks/reviews.css";
+@import "blocks/slider.css";
 
 
 

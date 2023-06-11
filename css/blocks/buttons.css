@@ -1,4 +1,4 @@
-.header__btn {
+.header__btn, .navigation__btn{
     /* padding: 9px 30px 10px 30px; */
     width: 280px;
     height: 55px;
@@ -173,6 +173,12 @@
     margin: 0 auto;
 }
 
+.form-modal__btn:disabled {
+    box-shadow: none;
+    background: var(--light-silver-color, #777477);
+    border: 3px solid var(--light-silver-color, #777477);
+}
+
 .questions__btn_odd {
     background: url("../../icons/plus_purple.svg") no-repeat;
     background-size: 20px;
@@ -308,7 +314,6 @@
         height: 46px;
         font-size: 14px;
         line-height: 24px;
-        position: absolute;
     }
 }
 
@@ -316,7 +321,7 @@
     .header__btn {
         display: none;
     }
-    .header__btn_mini {
+    .navigation__btn {
         display: flex;
         margin: 0 auto;
         width: 184px;
